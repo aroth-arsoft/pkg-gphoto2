@@ -1,0 +1,27 @@
+From: Cyril Roelandt <tipecaml@gmail.com>
+Date: Sat, 17 Oct 2020 16:07:52 +0200
+Subject: Fix FTBFS on hurd-i386
+
+Reviewed-by: Herbert Parentes Fortes Neto <hpfn@debian.org>
+Bug-Debian: https://bugs.debian.org/671545
+Last-Update: 2016-11-23
+
+Fix hurd-i386 because of the unconditional use of PATH_MAX in gphoto2/main.c
+===================================================================
+---
+ gphoto2/main.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gphoto2/main.c b/gphoto2/main.c
+index 5ae7bbd..360f3c5 100644
+--- a/gphoto2/main.c
++++ b/gphoto2/main.c
+@@ -2279,7 +2279,7 @@ main (int argc, char **argv, char **envp)
+ 		}	
+ 	}
+ 	if (!gp_params.hook_script) {
+-		char buf[PATH_MAX];
++		char buf[256];
+ 		if (gp_setting_get("gphoto2","hook-script",buf)>=0) {
+ 			gp_params.hook_script = strdup(buf);
+ 			/* Run init hook */

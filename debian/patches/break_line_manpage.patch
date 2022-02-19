@@ -1,0 +1,25 @@
+From: Herbert Parentes Fortes Neto <hpfn@ig.com.br>
+Date: Sat, 17 Oct 2020 16:07:52 +0200
+Subject: fix lintian warnning about breaking line
+
+Last-Update: 2014-12-09
+---
+ doc/gphoto2.1 | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/doc/gphoto2.1 b/doc/gphoto2.1
+index 333045c..f90c356 100644
+--- a/doc/gphoto2.1
++++ b/doc/gphoto2.1
+@@ -286,8 +286,9 @@ file as
+ (Expert only) Override
+ USB
+ IDs\&.
+-\fI \fR\fI\fIUSBIDS\fR\fRmust be of the form
+-\fI \fR\fI\fIDetectedVendorID\fR\fR\fI:\fR\fI\fIDetectedProductID\fR\fR\fI=\fR\fI\fITreatAsVendorID\fR\fR\fI:\fR\fI\fITreatAsProductID\fR\fR
++\fI \fR\fI\fIUSBIDS\fR\fR must be of the form
++\fI \fR\fI\fIDetectedVendorID\fR\fR\fI:\fR\fI\fIDetectedProductID\fR\fR\fI=
++\fR\fI\fITreatAsVendorID\fR\fR\fI:\fR\fI\fITreatAsProductID\fR\fR
+ to treat any USB device detected as
+ \fI\fIDetectedVendorID\fR\fR\fI:\fR\fI\fIDetectedProductID\fR\fR
+ as

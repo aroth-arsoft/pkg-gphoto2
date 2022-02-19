@@ -1,0 +1,20 @@
+From: =?utf-8?q?Ferenc_W=C3=A1gner?= <wferi@debian.org>
+Date: Sat, 24 Oct 2020 09:13:11 +0200
+Subject: Skip test021, because it walks the entire filesystem
+
+---
+ tests/data/test021.param | 5 -----
+ 1 file changed, 5 deletions(-)
+ delete mode 100644 tests/data/test021.param
+
+diff --git a/tests/data/test021.param b/tests/data/test021.param
+deleted file mode 100644
+index e26be2d..0000000
+--- a/tests/data/test021.param
++++ /dev/null
+@@ -1,5 +0,0 @@
+-TITLE='Missing port option'
+-COMMAND='$PROGRAM --camera="Directory Browse" -L 2> "$ERRFILE" > "$OUTFILE"'
+-RESULTCODE=1
+-SEDCOMMAND='/^For debugging messages/,$d'
+-RESULTFILE=/dev/null
