@@ -1,3 +1,9 @@
+gphoto2 (2.5.28-0~aroth1) focal; urgency=medium
+
+  * backport to focal
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Sat, 19 Feb 2022 14:08:05 +0100
+
 gphoto2 (2.5.27-1) unstable; urgency=medium
 
   * [899c929] New upstream version 2.5.27
