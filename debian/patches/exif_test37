@@ -1,0 +1,11 @@
+--- a/tests/data/test037.result
++++ b/tests/data/test037.result
+@@ -16,7 +16,7 @@
+ ComponentsConfigurat|Y Cb Cr -                                                  
+ UserComment         |Public domain EXIF test image                              
+ FlashPixVersion     |FlashPix Version 1.0                                       
+-ColorSpace          |Uncalibrated                                               
++ColorSpace          |Internal error (unknown value 65535)                       
+ PixelXDimension     |32                                                         
+ PixelYDimension     |32                                                         
+ --------------------+-----------------------------------------------------------
